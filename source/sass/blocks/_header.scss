@@ -1,3 +1,57 @@
-header {
-  background-color: $primary;
+.header {
+  background-color: $mine-shaft;
+  border-bottom: 4px solid $cinnabar;
+}
+
+.header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.header__logo {
+  transition: all ;
+}
+
+.header__logo:hover,
+.header__logo:focus {
+  opacity: 0.8;
+}
+
+.header__logo:focus {
+  opacity: 0.6;
+}
+
+.header__logo img {
+  display: block;
+  width: 100px;
+  height: 41px;
+}
+
+.header__nav {
+  max-width: 560px;
+}
+
+.header__menu-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  .header__inner {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .header__logo {
+    margin-bottom: 20px;
+  }
 }
