@@ -70,11 +70,19 @@
 
 @media (max-width: 505px) {
   .menu-list {
-    flex-direction: column;
+    justify-content: space-between;
   }
 
   .menu-list__item {
+    flex-basis: 50%;
+
     margin-right: 0;
     margin-bottom: 3px;
+
+    text-align: center;
+  }
+
+  .menu-list__link::before {
+    display: none;
   }
 }

@@ -1,0 +1,133 @@
+.hero {
+  background-color: $mine-shaft;
+  background-image: url("../img/bg-man.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.hero__inner {
+  padding-top: 255px;
+  padding-bottom: 250px;
+}
+
+.hero__content {
+  max-width: 580px;
+  width: 100%;
+  margin-left: auto;
+
+  font-family: "Raleway", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 80px;
+  color: $white;
+}
+
+.hero__title-text {
+  display: block;
+
+  font-size: 43px;
+  line-height: 55px;
+}
+
+.hero__title-text span {
+  color: $cinnabar;
+}
+
+.hero__text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  color: $emperor;
+}
+
+.hero__button {
+  margin-top: 20px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+.hero__button:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    background-image: none;
+  }
+
+  .hero__inner {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  .hero__content {
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero__title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .hero__title-text {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .hero__text {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 505px) {
+  .hero__inner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .hero__title-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .hero__text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .hero__button {
+    margin-top: 10px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}

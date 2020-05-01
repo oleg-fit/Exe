@@ -1,0 +1,53 @@
+.button {
+  display: inline-block;
+  width: 170px;
+  height: 54px;
+
+  padding-top: 15px;
+
+  vertical-align: middle;
+
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.button--red {
+  background-color: $cinnabar;
+
+  transition: all 0.2s linear;
+}
+
+.button--red:hover,
+.button--red:focus {
+  background-color: darken($cinnabar, 10%);
+}
+
+.button--red:active {
+  background-color: darken($cinnabar, 15%);
+}
+
+.button--border {
+  border: 2px solid $white;
+
+  transition: all 0.2s linear;
+}
+
+.button--border:hover,
+.button--border:focus {
+  border-color: darken($cinnabar, 10%);
+}
+
+.button--border:active {
+  border-color: darken($cinnabar, 25%);
+}

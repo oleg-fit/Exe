@@ -1,7 +1,15 @@
 @import "normalize";
+// ========= Global =========
+@import "visually-hidden";
 @import "variables";
 @import "fonts";
 @import "base";
 @import "container";
+@import "blocks/button";
+// ========= Blocks =========
+// ========= Index.html =========
 @import "blocks/header";
 @import "blocks/menu-list";
+@import "blocks/hero";
+@import "blocks/advantages";
+@import "blocks/works";
