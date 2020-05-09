@@ -1,0 +1,44 @@
+.responsive-list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.responsive-list__item {
+  position: relative;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 55px;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  color: $dusty-gray;
+}
+
+.responsive-list__item::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 25px;
+
+  width: 8px;
+  height: 2px;
+
+  transform: translateY(-50%);
+  background-color: $cinnabar;
+}
+
+@media (max-width: 480px) {
+  .responsive-list__item {
+    padding-left: 35px;
+  }
+
+  .responsive-list__item::before {
+    left: 15px;
+  }
+}

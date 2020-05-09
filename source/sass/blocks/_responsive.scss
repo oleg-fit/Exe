@@ -1,0 +1,90 @@
+.responsive {
+  background-color: $mine-shaft;
+}
+
+.responsive__inner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background-image: url("../img/bg-two.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.responsive__content {
+  max-width: 360px;
+  width: 100%;
+
+  margin-left: auto;
+}
+
+.responsive__content-title {
+  position: relative;
+
+  margin-top: 25px;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.responsive__content-title::before {
+  content: "";
+
+  position: absolute;
+  top: -25px;
+  left: 0;
+
+  display: block;
+  width: 70px;
+  height: 2px;
+
+  background-color: $mine-shaft4;
+}
+
+.responsive__content-text {
+  margin-top: 25px;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: $tundora;
+}
+
+.responsive__content-btn {
+  margin-top: 50px;
+  padding-top: 0;
+
+  background-color: $sushi;
+}
+
+.responsive__content-btn:hover,
+.responsive__content-btn:focus {
+  background-color: darken($sushi, 10%);
+}
+
+.responsive__content-btn:active {
+  background-color: darken($sushi, 15%);
+}
+
+@media (max-width: 768px) {
+  .responsive__inner {
+    background-image: none;
+  }
+
+  .responsive__content {
+    max-width: 100%;
+
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive__inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
